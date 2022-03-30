@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js-learning</title>
+    <style>
+        #div1{
+            width:100px;
+            height:100px;
+            background:red;
+            display:none;
+            }
+    </style>
+    <script>
+        function showHide(){
+            var_ele=document.getElementById('div1').style;
+            if(var_ele.display=="none"){var_ele.display='block';}
+            else{var_ele.display='none';}
+        }
+    </script>
+</head>
+<body>
+	<!--
+    -->
+    <button type="button" onclick="showHide()">hide the div</button>
+    <div id="div1"></div>
+</body>
+</html>

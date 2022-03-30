@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js-learning</title>
+    <style>
+        #div1{
+            width:200px;
+            height:200px;
+            background:red;
+            font-size: 12px;
+            }
+    </style>
+    <script>
+        function dayTheme(){
+            document.body.style.background='green';
+            document.getElementById('div1').style.fontSize='12px';
+        }
+        function nightTheme(){
+            document.body.style.background='black';
+            document.getElementById('div1').style.fontSize='20px';
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="dayTheme()">day</button>
+    <button type="button" onclick="nightTheme()">night</button>
+    <div id="div1">When I was young, I had freedom, but I didn't know what it meant.
+I had time, but I didn't realize how valuable it was. I had love, but I never felt it.
+After decades of time, </div>
+</body>
+</html>

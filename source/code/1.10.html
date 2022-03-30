@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>js-learning</title>
+    <script>
+        window.onload=function(){
+            var ele=document.getElementById('btn')
+            ele.onclick=function(){
+                var bg='background';    //Can be used in "[]"
+                //ele.value="change content";
+                //ele.innerHtml='change content';  this is for non-form elements
+                //ele.style.background='red';       One way
+                ele['style'][bg]='green';         //The other
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="change color" id="btn">
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function(){
+            var ele_1=document.getElementById('btn');
+            var ele_m=document.getElementsByTagName('input');
+            ele_1.onclick=function(){
+                for(i=0;i<5;i++){ele_m[i].checked=true;}
+            }
+        }
+    </script>
+</head>
+<body>
+    <button type="button" id="btn">select all</button>
+    <hr>
+    <input type="checkbox" name="a" id="cb1">
+    <input type="checkbox" name="b" id="cb2">
+    <input type="checkbox" name="c" id="cb3">
+    <input type="checkbox" name="d" id="cb4">
+</body>
+</html>

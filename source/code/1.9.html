@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function(){
+            var ele_1=document.getElementById('btn');
+            var ele_2=document.getElementById('cb1');
+            var ele_3=document.getElementById('cb2');
+            var ele_4=document.getElementById('cb3');
+            var ele_5=document.getElementById('cb4');
+            ele_1.onclick=function(){
+                ele_2.checked=true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <button type="button" id="btn">select all</button>
+    <hr>
+    <input type="checkbox" name="a" id="cb1">
+    <input type="checkbox" name="b" id="cb2">
+    <input type="checkbox" name="c" id="cb3">
+    <input type="checkbox" name="d" id="cb4">
+</body>
+</html>

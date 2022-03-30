@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js-learning</title>
+    <style>
+        #div1{
+            width:200px;
+            height:200px;
+            background:red;
+            }
+    </style>
+    <script>
+        function toColor(var_color){
+            document.getElementById('div1').style.background=var_color;
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="toColor('Red')">Red</button>
+    <button type="button" onclick="toColor('Blue')">Blue</button>
+    <button type="button" onclick="toColor('Green')">Green</button>
+    <div id="div1"> </div>
+</body>
+</html>

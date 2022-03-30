@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>js-learning</title>
+    <style>
+        #div1{
+            width:200px;
+            height:200px;
+            background:black;
+            }
+    </style>
+    <script>
+        var key=0;
+        window.onload=function (){
+            document.getElementById('btn').onclick=function (){
+                key=key^1;
+                if(key==1){
+                    alert("size is changing");
+                    document.getElementById('div1').style.width='400px';
+                };
+            };
+        }
+    </script>
+</head>
+<body>
+    <button type="button" id="btn">change size</button>
+    <div id="div1"> </div>
+</body></html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js-learning</title>
+    <style>
+        #div1{
+            width:100px;
+            height:100px;
+            background:red;
+            }
+    </style>
+    <script>
+        function toBig(){
+        var_ele=document.getElementById('div1');
+        var_ele.style.width='200px';
+        var_ele.style.height='200px';
+        }
+        function toSmall(){
+        var_style=document.getElementById('div1').style;
+        var_style.width='100px';
+        var_style.height='100px';
+        }
+    </script>
+</head>
+<body>
+	<!--
+    css style is way to simplify expression.
+    <script>tag is the way js to simplify expression.
+    1.Define:row 13~22
+    2.Invoke:row 31
+    -->
+    <div id="div1" onmouseover="toBig()" onmouseout="toSmall()"></div>
+</body>
+</html>
+
+
+
+

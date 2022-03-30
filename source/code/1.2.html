@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js-learning</title>
+    <style>
+        #div1{
+            width:100px;
+            height:100px;
+            background:red;
+            display:none;
+            }
+    </style>
+</head>
+<body>
+	<!--
+    <button type="button" onclick="div1">show me the div</button>	//wrong!
+    <div id="div1"></div>
+    The right way is to Change the `display` property to `block` ,like css.
+    -->
+    <button type="button" onclick="div1.style.display='block'">show me the div</button>
+    <div id="div1"></div>
+</body>
+</html>
