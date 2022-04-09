@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function(){
+            //Define variables
+            var ele_p=document.getElementById('p_cb');
+            var ele_b=document.getElementById('box');
+            var ele_s=ele_b.getElementsByTagName('input');
+            //set parent check box
+            ele_p.onclick=function(){
+                for(i=0;i<3;i++){
+                    ele_s[i].checked=ele_p.checked;
+                }
+            }
+            //set child check box
+            for(i=0;i<3;i++){
+                ele_s[i].onclick=function(){        //click - check true count
+                    var count=0; 
+                    for(i=0;i<3;i++){
+                        if(ele_s[i].checked){count++;}
+                    }
+                    if(count==3){ele_p.checked=true;}
+                    else{ele_p.checked=false;}
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="checkbox" name="a" id="p_cb">
+    <hr>
+    <div id="box">
+        <input type="checkbox" name="b" id="cb2">
+        <input type="checkbox" name="c" id="cb3">
+        <input type="checkbox" name="d" id="cb4">
+    </div>
+</body>
+</html>

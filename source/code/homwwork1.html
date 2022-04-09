@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function(){               
+            var p_sports=document.getElementById('sports');
+            var ele_sports=p_sports.getElementsByTagName('input');
+            var ele_alne=document.getElementById('alne');                       //定义
+
+            function all(){for(var i=0;i<4;i++){ele_sports[i].checked=true;}}   //全选函数
+            function none(){for(var i=0;i<4;i++){ele_sports[i].checked=false;}} //全不选函数
+
+            ele_alne.onclick=function(){         //全选/全不选选框
+                var i,j=0;
+                for(i=0;i<4;i++){
+                    if(ele_sports[i].checked==false) {all();break;}
+                    else {j++;}
+                }
+                if(j==ele_sports.length){none();}
+            }
+
+            document.getElementById('all').onclick=all;             //全选按钮
+            document.getElementById('none').onclick=none;           //全不选按钮
+            document.getElementById('reverse').onclick=function(){  //反选按钮
+                for(i=0;i<4;i++){
+                    ele_sports[i].checked=!ele_sports[i].checked;
+                }
+            }
+            document.getElementById('submit').onclick=function(){   //提交按钮
+                for(i=0;i<4;i++){
+                    if(ele_sports[i].checked==true)alert(ele_sports[i].name);
+                }
+            }
+        } 
+    </script>
+</head>
+<body>
+    <p>
+        你的爱好运动是?
+        <input type="checkbox" value="全选/全不选" id="alne">全选/全不选
+    </p>   
+    <p id="sports">
+        <input type="checkbox"  name="足球">足球
+        <input type="checkbox"  name="篮球">篮球
+        <input type="checkbox"  name="羽毛球">羽毛球
+        <input type="checkbox"  name="乒乓球">乒乓球
+    </p>
+    <input type="button" value="全选" id="all">
+    <input type="button" value="全不选" id="none">
+    <input type="button" value="反选" id="reverse">
+    <input type="button" value="提交" id="submit">
+</body>
+</html>

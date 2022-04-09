@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function(){
+            var ele_2=document.getElementById('btn1');
+            var ele_m=document.getElementsByTagName('input');
+            ele_2.onclick=function(){
+                //for(i=0;i<5;i++){ele_m[i].checked=!ele_m[i].checked;}
+                for(i=0;i<5;i++){ele_m[i].checked=1^ele_m[i].checked;}
+            }
+        }
+    </script>
+</head>
+<body>
+    <button type="button" id="btn1">reserve select</button>
+    <hr>
+    <input type="checkbox" name="a" id="cb1">
+    <input type="checkbox" name="b" id="cb2">
+    <input type="checkbox" name="c" id="cb3">
+    <input type="checkbox" name="d" id="cb4">
+</body>
+</html>

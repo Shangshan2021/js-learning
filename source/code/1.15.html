@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Title</title>
+    <script>
+        window.onload = function(){
+            ele_t1=document.getElementById('t1');
+            ele_t2=document.getElementById('t2');
+            ele_add=document.getElementById('add');
+            ele_add.onclick=function(){
+                alert(parseInt(ele_t1.value)+parseInt(ele_t2.value));
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="t1">+
+    <input type="text" id="t2">
+    <input type="button" id="add" value="add">
+</body>
+</html>
