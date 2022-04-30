@@ -17,6 +17,7 @@ Welcome to js-learning's documentation!
    The fifth week of learning JS 
    The sixth week of learning JS 
    The eighth week of learning JS 
+   The ninth week of learning JS 
 
 .. toctree::
    :caption: Example Download
