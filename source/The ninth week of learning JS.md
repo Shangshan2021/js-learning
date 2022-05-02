@@ -196,8 +196,60 @@
 
 ## Solution
 
+关于1.20Timer中的继续功能:(其实如果写在"暂停"按钮的分支语句就更好了,下星期做)
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            var Time = document.getElementById('time');
+            var Start = document.getElementById('start');
+            var Stop = document.getElementById('stop');
+            var Cont = document.getElementById('continue');			//add
+            var count = 0;
+            var s = 0;
+            var timer = null;
+            function tuDou(n) {
+                return n < 10 ? '0' + n : '' + n;
+            }
+            Start.onclick = function () {
+                s = 0;
+                clearInterval(timer);
+                timer = setInterval(function () {
+                    s++;
+                    Time.value = tuDou(parseInt(s/60))+':'+tuDou(s%60);
+                }, 50)
+            }
+            Stop.onclick = function () {
+                clearInterval(timer);
+            }
+            Cont.onclick = function () {
+                s = s;
+                timer = setInterval(function () {
+                    s++;
+                    Time.value = tuDou(parseInt(s / 60)) + ':' + tuDou(s % 60);
+                }, 50)
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" value="00:00" id="time">
+    <input type="button" value="开始" id="start">
+    <input type="button" value="暂停" id="stop">
+    <input type="button" value="继续" id="continue">
+</body>
+</html>
+```
+
+
+
 ## About Node.js
 
-1. 与Python中的Django很类似,这里附上Django的学习[链接](https://django-learning.readthedocs.io/en/latest/)
-2. ![img1.20](.\pic\img1.20.png)
+1. 与Python中的Django很类似,这里附上我的Django的学习[链接](https://django-learning.readthedocs.io/en/latest/)
+2. ![](./pic/img1.20.png)
 
