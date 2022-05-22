@@ -17,6 +17,7 @@ Download
 :download:`1.9 <./code/1.9.html>`.
 
 :download:`1.10 <./code/1.10.html>`.
+:download:`Font&SVG <./code/F&S.zip>`.
 
 
 `Return to the main page.`_
