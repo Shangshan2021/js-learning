@@ -18,6 +18,7 @@ Welcome to js-learning's documentation!
    The sixth week of learning JS 
    The eighth week of learning JS 
    The ninth week of learning JS 
+   The tenth week of learning JS
    The 11th week of learning JS
    The 12th week of learning JS
 
