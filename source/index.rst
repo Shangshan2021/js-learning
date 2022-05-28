@@ -21,6 +21,7 @@ Welcome to js-learning's documentation!
    The tenth week of learning JS
    The 11th week of learning JS
    The 12th week of learning JS
+   The 13th week of learning JS
 
 .. toctree::
    :caption: Example Download
